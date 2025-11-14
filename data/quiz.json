@@ -1,0 +1,212 @@
+{
+  "html": {
+    "titre": "Quiz HTML",
+    "questions": [
+      {
+        "type": "checkbox",
+        "question": "Quelles balises sont des balises de bloc ?",
+        "options": ["&lt;div&gt;", "&lt;span&gt;", "&lt;p&gt;", "&lt;a&gt;", "&lt;section&gt;"],
+        "correctAnswer": [0, 2, 4],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "HTML est un langage de programmation",
+        "correctAnswer": false,
+        "points": 1
+      },
+      {
+        "type": "checkbox",
+        "question": "Quels attributs sont valides pour une balise input ?",
+        "options": ["type", "color", "src", "placeholder", "required"],
+        "correctAnswer": [0, 3, 4],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "La balise &lt;br&gt; est une balise auto-fermante",
+        "correctAnswer": true,
+        "points": 1
+      },
+      {
+        "type": "checkbox",
+        "question": "Quelles balises sont nécessaires dans un formulaire ?",
+        "options": ["&lt;form&gt;", "&lt;input&gt;", "&lt;div&gt;", "&lt;button&gt;", "&lt;label&gt;"],
+        "correctAnswer": [0, 1],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "CSS est nécessaire pour rendre une page HTML stylisée",
+        "correctAnswer": true,
+        "points": 1
+      },
+      {
+        "type": "checkbox",
+        "question": "Quelles méthodes HTTP peuvent être utilisées dans un formulaire ?",
+        "options": ["GET", "POST", "PUT", "DELETE", "PATCH"],
+        "correctAnswer": [0, 1],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "JavaScript est obligatoire pour toutes les pages web",
+        "correctAnswer": false,
+        "points": 1
+      },
+      {
+        "type": "checkbox",
+        "question": "Quelles balises sont des balises sémantiques ?",
+        "options": ["&lt;header&gt;", "&lt;div&gt;", "&lt;footer&gt;", "&lt;span&gt;", "&lt;article&gt;"],
+        "correctAnswer": [0, 2, 4],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "Les balises HTML doivent toujours être fermées",
+        "correctAnswer": false,
+        "points": 1
+      }
+    ]
+  },
+  "css": {
+    "titre": "Quiz CSS",
+    "questions": [
+      {
+        "type": "checkbox",
+        "question": "Quelles propriétés sont utilisées pour le modèle de boîte ?",
+        "options": ["margin", "padding", "border", "color", "display"],
+        "correctAnswer": [0, 1, 2],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "CSS peut être utilisé pour créer des animations",
+        "correctAnswer": true,
+        "points": 1
+      },
+      {
+        "type": "checkbox",
+        "question": "Quels sélecteurs CSS sont valides ?",
+        "options": [".class", "#id", "*", "element", "> child"],
+        "correctAnswer": [0, 1, 2, 3, 4],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "Flexbox et Grid sont les mêmes choses",
+        "correctAnswer": false,
+        "points": 1
+      },
+      {
+        "type": "checkbox",
+        "question": "Quelles propriétés contrôlent l'affichage d'un élément ?",
+        "options": ["display", "visibility", "opacity", "color", "font-size"],
+        "correctAnswer": [0, 1, 2],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "Les media queries sont utilisées pour le responsive design",
+        "correctAnswer": true,
+        "points": 1
+      },
+      {
+        "type": "checkbox",
+        "question": "Quelles valeurs peut prendre la propriété position ?",
+        "options": ["static", "relative", "fixed", "sticky", "float"],
+        "correctAnswer": [0, 1, 2, 3],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "CSS peut modifier le contenu HTML",
+        "correctAnswer": false,
+        "points": 1
+      },
+      {
+        "type": "checkbox",
+        "question": "Quelles propriétés sont utilisées pour les polices ?",
+        "options": ["font-family", "font-size", "font-weight", "background", "color"],
+        "correctAnswer": [0, 1, 2, 4],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "Les variables CSS sont supportées par tous les navigateurs",
+        "correctAnswer": true,
+        "points": 1
+      }
+    ]
+  },
+  "javascript": {
+    "titre": "Quiz JavaScript",
+    "questions": [
+      {
+        "type": "checkbox",
+        "question": "Quels sont des types de données primitifs en JavaScript ?",
+        "options": ["string", "number", "array", "boolean", "object"],
+        "correctAnswer": [0, 1, 3],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "JavaScript peut s'exécuter côté serveur avec Node.js",
+        "correctAnswer": true,
+        "points": 1
+      },
+      {
+        "type": "checkbox",
+        "question": "Quelles méthodes peuvent parcourir un tableau ?",
+        "options": ["forEach", "map", "loop", "iterate", "filter"],
+        "correctAnswer": [0, 1, 4],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "JavaScript est le même que Java",
+        "correctAnswer": false,
+        "points": 1
+      },
+      {
+        "type": "checkbox",
+        "question": "Quels opérateurs sont de comparaison ?",
+        "options": ["==", "===", "=", "!=", "!=="],
+        "correctAnswer": [0, 1, 3, 4],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "Les fonctions fléchées ont leur propre 'this'",
+        "correctAnswer": false,
+        "points": 1
+      },
+      {
+        "type": "checkbox",
+        "question": "Quels concepts font partie de JavaScript ?",
+        "options": ["Promises", "Async/Await", "Classes", "Interfaces", "Generics"],
+        "correctAnswer": [0, 1, 2],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "JavaScript est un langage typé statiquement",
+        "correctAnswer": false,
+        "points": 1
+      },
+      {
+        "type": "checkbox",
+        "question": "Quelles méthodes manipulent les tableaux ?",
+        "options": ["push", "pop", "shift", "unshift", "concat"],
+        "correctAnswer": [0, 1, 2, 3, 4],
+        "points": 2
+      },
+      {
+        "type": "true_false",
+        "question": "JavaScript peut manipuler le DOM",
+        "correctAnswer": true,
+        "points": 1
+      }
+    ]
+  }
+}

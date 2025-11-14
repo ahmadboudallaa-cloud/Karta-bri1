@@ -10,70 +10,57 @@
 </head>
 <body class="bg-[#1E1E24] text-white">
     
-    <nav class="flex flex-col items-center py-[20px] gap-[20px] bg-[#92140C]  ">   
-  <a class="text-7xl font-[Ingrid_Darling]" href="index.html"><b>Karta</b></a>
-      <div class="flex gap-9">
-        <a href="index.html">Accueil</a>
-        <a href="flach.html">Flashcards</a>
-        <a href="quiz.html">Quiz</a>
-      </div>
+    <nav class="flex flex-col items-center py-[20px] gap-[20px] bg-[#92140C]">   
+        <a class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[Ingrid_Darling]" href="index.html"><b>Karta</b></a>
+        <div class="flex gap-6 sm:gap-7 md:gap-8 lg:gap-9">
+            <a href="index.html">Accueil</a>
+            <a href="flach.html">Flashcards</a>
+            <a href="quiz.html">Quiz</a>
+        </div>
     </nav>
-    <main>
-
-    <div class="flex flex-col justify-center items-center gap-[80px] m-[70px] ">
-
-                <h1 class="text-4xl text-center  w-[350px] font-[Irish_Grover] font-semibold "> Flashcards</h1>
-              <div class="w-[750px] h-[3px] bg-[#92140C]"></div>
-            </div>
-
-
-            <section class="collection-et-carte mt-[25px] flex items-center gap-5 ">
-                <div class="collection flex gap-3 flex-col  ">
-                    <h1 class="text-2xl font-[Irish_Grover]">Créer une collection:</h1>
-                   <input class="bg-white text-black h-[40px] w-[500px] border-[#92140C] border-[3px] pl-[7px]" type="text" placeholder="Titre de la collection">
-                  <button type="button" onclick="" class="bg-[#92140C] font-bold h-[25px] w-[500px] flex items-center justify-center">Créer la collection</button>
-
-
-
-                </div>
-                <div class="w-[120px] h-[3px] bg-[#92140C] rotate-90 "></div>
-
-                <div class="carte ">
-                    
-
-                </div>
-
-
-            </section>
-
-
-
-
-
-
-
-
-
-
-
-    </main>
-
-
-
-
-
-      <footer class="flex h-[100px] items-center mt-[80px] justify-center bg-[#92140C]">
-
-            <h1 class="text-7xl font-[Ingrid_Darling]"><b>Karta</b></h1>
-
-        </footer>
-
-
-
-
-
-
-    </main>
     
+    <main>
+        <div class="flex flex-col justify-center items-center gap-[40px] sm:gap-[50px] md:gap-[60px] lg:gap-[80px] m-[30px] sm:m-[40px] md:m-[50px] lg:m-[70px]">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl text-center w-[280px] sm:w-[300px] md:w-[320px] lg:w-[350px] font-[Irish_Grover] font-semibold">Flashcards</h1>
+            <div class="w-[90%] sm:w-[600px] md:w-[650px] lg:w-[750px] h-[3px] bg-[#92140C]"></div>
+        </div>
+
+        <section>
+            <div class="collection_et_carte flex flex-col xl:flex-row justify-center gap-[40px] md:gap-[60px] lg:gap-[80px] px-4 sm:px-6 md:px-8">
+                <div class="collection flex gap-3 flex-col w-full max-w-[500px]">
+                    <h1 class="text-xl sm:text-2xl font-[Irish_Grover]">Créer une collection:</h1>
+                    <input id="input-Collection" class="bg-white text-black h-[40px] w-full border-[#92140C] border-[3px] pl-[7px]" type="text" placeholder="Titre de la collection">
+                    <button type="button" onclick="" id="addCollection" class="bg-[#92140C] font-bold h-[25px] w-full flex items-center justify-center">Créer la collection</button>
+                </div>
+                
+                <div class="hidden xl:block h-[150px] border border-l-[3px] border-[#92140C]"></div>
+
+                <div class="carte flex flex-col gap-3 w-full max-w-[500px]">
+                    <h1 class="text-xl sm:text-2xl font-[Irish_Grover]">Ajouter une carte:</h1>
+                    <select name="liste-collection" id="collection-liste" class="bg-white text-black h-[40px] w-full border-[#92140C] border-[3px] pl-[7px]">
+                        <option value="null">--collection--</option>
+                    </select>
+                    <input class="question bg-white text-black h-[40px] w-full border-[#92140C] border-[3px] pl-[7px]" type="text" placeholder="Question ?">
+                    <input class="reponse bg-white text-black h-[40px] w-full border-[#92140C] border-[3px] pl-[7px]" type="text" placeholder="Reponse">
+                    <button type="button" onclick="addCards()" class="bg-[#92140C] font-bold h-[25px] w-full flex items-center justify-center">Ajouter la carte</button>
+                </div>
+            </div>
+        </section>
+        
+        <div class="vos_collection m-[30px] sm:m-[40px] md:m-[50px] flex flex-col items-center gap-3">
+            <h1 class="text-xl sm:text-2xl font-[Irish_Grover]">Vos collections:</h1>
+        </div>
+    </main>
+
+  <footer class="flex h-16 sm:h-20 md:h-24 lg:h-[100px] items-center mt-8 sm:mt-12 md:mt-16 lg:mt-[80px] justify-center bg-[#92140C]">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[Ingrid_Darling]"><b>Karta</b></h1>
+    </footer>
+
+    <script src="js/script.js">
+        var card = document.querySelector('.card');
+        card.addEventListener('click', function () {
+            card.classList.toggle('flip');
+        });
+    </script>
 </body>
 </html>

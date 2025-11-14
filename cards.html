@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Jacquard+24&display=swap" rel="stylesheet">    <title>Karta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+
+</head>
+<body class="bg-[#1E1E24] text-white">
+    
+    <nav class="flex flex-col items-center py-4 sm:py-5 md:py-[20px] gap-4 sm:gap-5 md:gap-[20px] bg-[#92140C]">   
+        <a class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[Ingrid_Darling]" href="index.html"><b>Karta</b></a>
+        <div class="flex gap-4 sm:gap-6 md:gap-7 lg:gap-9">
+            <a href="index.html">Accueil</a>
+            <a href="flach.html">Flashcards</a>
+            <a href="quiz.html">Quiz</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="flex flex-col justify-center items-center gap-8 sm:gap-12 md:gap-16 lg:gap-[80px] m-4 sm:m-6 md:m-8 lg:m-[70px]">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl text-center w-64 sm:w-72 md:w-80 lg:w-[350px] font-[Irish_Grover] font-semibold">Flashcards</h1>
+            <div class="w-11/12 sm:w-3/4 md:w-[600px] lg:w-[750px] h-[3px] bg-[#92140C]"></div>
+        </div>
+
+        <div class="flex flex-col items-center gap-6 sm:gap-7 md:gap-8 lg:gap-9">
+            <h1 class="collection-nom text-center items-center text-lg sm:text-xl md:text-2xl bg-[#92140C] font-bold h-8 sm:h-9 md:h-10 lg:h-[40px] w-11/12 sm:w-96 md:w-[500px] lg:w-[550px] border border-[2px] border-white"></h1>  
+            
+            <div class="card">
+                <div class="card-face card1">
+                    <p class="bg-[#92140C] font-bold h-48 sm:h-56 md:h-60 lg:h-[250px] w-80 sm:w-96 md:w-[350px] lg:w-[400px] flex justify-center items-center border border-[2px] border-black"></p>
+                </div>
+
+                <div class="card-face card2">
+                    <p class="bg-[#92140C] font-bold h-48 sm:h-56 md:h-60 lg:h-[250px] w-80 sm:w-96 md:w-[350px] lg:w-[400px] flex justify-center items-center border border-[2px] border-black"></p>
+                </div> 
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-4 sm:gap-6 md:gap-7 lg:gap-9 mt-6 sm:mt-8">
+            <a href="#" class="prev bg-[#92140C] font-bold h-6 sm:h-[25px] w-32 sm:w-36 md:w-40 lg:w-[150px] border-2 border-white flex items-center justify-start gap-2 px-2 sm:px-3">
+                <span>⬅️</span> Précédent
+            </a>
+
+            <a href="#" class="next bg-[#92140C] font-bold h-6 sm:h-[25px] w-32 sm:w-36 md:w-40 lg:w-[150px] border-2 border-white flex items-center justify-end gap-2 px-2 sm:px-3">
+                Suivant <span>➡️</span>
+            </a>
+        </div>
+    </main>
+
+    <footer class="flex h-16 sm:h-20 md:h-24 lg:h-[100px] items-center mt-8 sm:mt-12 md:mt-16 lg:mt-[80px] justify-center bg-[#92140C]">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[Ingrid_Darling]"><b>Karta</b></h1>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

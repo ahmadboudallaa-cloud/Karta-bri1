@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Jacquard+24&display=swap" rel="stylesheet">
+    <title>Karta - Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .quiz-item:hover {
+            transform: scale(1.05);
+            background: #7a1109 !important;
+        }
+        .checkbox-option {
+            transition: all 0.3s ease;
+        }
+        .checkbox-option:hover {
+            background: grey;
+        }
+        .checkbox-option.selected {
+            background: grey !important;
+            color:black !important;
+            border-color: black!important;
+        }
+        .true-false-btn {
+            transition: all 0.3s ease;
+        }
+        .true-false-btn:hover {
+            background: #f8f9fa;
+        }
+        .true-false-btn.selected {
+            background: #92140C !important;
+            color: white !important;
+            border-color: #92140C !important;
+        }
+    </style>
+</head>
+<body class="bg-[#1E1E24] text-white min-h-screen">
+    
+    <nav class="flex flex-col items-center py-4 sm:py-5 md:py-[20px] gap-4 sm:gap-5 md:gap-[20px] bg-[#92140C]">   
+        <a class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[Ingrid_Darling]" href="index.html"><b>Karta</b></a>
+        <div class="flex gap-4 sm:gap-6 md:gap-7 lg:gap-9">
+            <a href="index.html" class="hover:text-gray-200 transition-colors">Accueil</a>
+            <a href="flach.html" class="hover:text-gray-200 transition-colors">Flashcards</a>
+            <a href="quiz.html" class="hover:text-gray-200 transition-colors">Quiz</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        <div class="flex flex-col justify-center items-center gap-8 sm:gap-12 md:gap-16 lg:gap-[80px] m-4 sm:m-6 md:m-8 lg:m-[70px]">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl text-center w-64 sm:w-72 md:w-80 lg:w-[350px] font-[Irish_Grover] font-semibold">Quiz</h1>
+            <div class="w-11/12 sm:w-3/4 md:w-[600px] lg:w-[750px] h-[3px] bg-[#92140C]"></div>
+        </div>
+
+        <div id="quiz-container" class="max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
+           
+        </div>
+    </main>
+
+    <footer class="flex h-16 sm:h-20 md:h-24 lg:h-[100px] items-center mt-8 sm:mt-12 md:mt-16 lg:mt-[80px] justify-center bg-[#92140C]">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[Ingrid_Darling]"><b>Karta</b></h1>
+    </footer>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>
