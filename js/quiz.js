@@ -30,7 +30,7 @@ function displayQuizSelection(quizData) {
             ${Object.keys(quizData).map(quizKey => {
                 const quiz = quizData[quizKey];
                 return `
-                    <div class="quiz-item bg-[#92140C] font-bold h-[40px] w-[550px] border border-[2px] border-white flex items-center justify-center cursor-pointer transition-all duration-300" onclick="startQuiz('${quizKey}')">
+                    <div class="quiz-item w-full sm:w-[300px] md:w-[350px] bg-[#92140C] font-bold h-[40px] w-[550px] border border-[2px] border-white flex items-center justify-center cursor-pointer transition-all duration-300" onclick="startQuiz('${quizKey}')">
                         ${quiz.titre}
                     </div>
                 `;

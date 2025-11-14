@@ -103,11 +103,11 @@ if (document.getElementById('input-Collection')) {
  
         collections.forEach(col => {
             const collectionDiv = document.createElement('div');
-            collectionDiv.className = 'collection-item flex items-center justify-center gap-3 mb-3';
+            collectionDiv.className = 'collection-item flex  sm:flex-row items-center justify-center gap-3 mb-3 w-full px-4';
             
             const link = document.createElement('a');
             link.href = '#';
-            link.className = 'collection-cadre bg-[#92140C] font-bold h-[40px] w-[400px] flex items-center justify-center cursor-pointer rounded';
+            link.className = 'collection-cadre bg-[#92140C] font-bold h-[40px] w-full sm:w-[300px] md:w-[350px] lg:w-[400px] flex items-center justify-center cursor-pointer rounded text-center px-2';
             link.textContent = col.nom;
             link.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -117,7 +117,7 @@ if (document.getElementById('input-Collection')) {
             });
             
             const deleteBtn = document.createElement('button');
-            deleteBtn.className = 'delete-collection bg-[#92140C] hover:bg-red-700 text-white h-[40px] w-[100px] flex items-center justify-center cursor-pointer rounded font-bold';
+            deleteBtn.className = 'delete-collection bg-[#92140C] hover:bg-red-700 text-white h-[40px] w-[40%] sm:w-[100px] md:w-[120px] flex items-center justify-center cursor-pointer rounded font-bold text-sm sm:text-base';
             deleteBtn.textContent = 'Supprimer';
             deleteBtn.addEventListener('click', function(e) {
                 e.preventDefault();
