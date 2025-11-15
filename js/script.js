@@ -216,3 +216,5 @@ else if (document.querySelector('.card')) {
         }
     }
 }
+
+

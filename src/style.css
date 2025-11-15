@@ -35,3 +35,28 @@ transition: 0.5s;
     transform: rotateY(180deg);
 }
 
+
+
+@media (max-width: 640px) {
+            .card {
+                height: 200px;
+                max-width: 320px;
+            }
+           
+        }
+        
+        @media (min-width: 641px) and (max-width: 768px) {
+            .card {
+                height: 220px;
+                max-width: 350px;
+            }
+            
+        }
+        
+        @media (min-width: 769px) {
+            .card {
+                height: 250px;
+                max-width: 400px;
+            }
+             
+        }
